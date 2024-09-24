@@ -1,2 +1,2 @@
 echo "Running After Install script"
-sudo yum install -y httpd
+sudo apt install -y apache2
