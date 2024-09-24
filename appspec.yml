@@ -1,0 +1,27 @@
+version: 0.0 # AppSpec file version
+os: linux # Operating system of the EC2 instance
+
+files:
+  - source: /
+    destination: /var/www/html/ # Destination where files will be copied on EC2 instance
+
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300 # Timeout in seconds
+      runas: root # The user to run the script as
+
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: root
+
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
+      runas: ec2-user # Non-root user
+
+  ValidateService:
+    - location: scripts/validate_service.sh
+      timeout: 300
+      runas: ec2-user
