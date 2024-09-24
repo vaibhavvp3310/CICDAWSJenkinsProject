@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "Starting the application"
-sudo service httpd start
+echo "Civic476" | sudo -S service httpd start
