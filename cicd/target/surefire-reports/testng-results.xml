@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-09T17:36:46 EDT" name="Suite" finished-at="2024-09-09T17:36:47 EDT" duration-ms="1676">
+    <groups>
+    </groups>
+    <test started-at="2024-09-09T17:36:46 EDT" name="Test" finished-at="2024-09-09T17:36:47 EDT" duration-ms="1676">
+      <class name="vaibhav.tests.ErrorValidation">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.ErrorValidation@6e171cd7]" started-at="2024-09-09T17:36:46 EDT" name="landingPage" finished-at="2024-09-09T17:36:47 EDT" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="errorCheck()[pri:0, instance:vaibhav.tests.ErrorValidation@6e171cd7]" started-at="2024-09-09T17:36:47 EDT" name="errorCheck" finished-at="2024-09-09T17:36:47 EDT" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorCheck -->
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.ErrorValidation@6e171cd7]" started-at="2024-09-09T17:36:47 EDT" name="afterExecution" finished-at="2024-09-09T17:36:47 EDT" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterExecution -->
+      </class> <!-- vaibhav.tests.ErrorValidation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
