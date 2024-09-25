@@ -8,6 +8,7 @@ pipeline {
         DEPLOYMENT_GROUP = 'WebAppDeploymentGroup'
         GIT_REPO = 'https://github.com/vaibhavvp3310/CICDAWSJenkinsProject.git'
         GIT_CREDENTIALS_ID = '5173a2a0-99ce-405d-a563-a6caba467ad1'
+        COMMIT_ID = '' // Variable to hold commit ID
      
     }
 
@@ -16,6 +17,10 @@ pipeline {
             steps {
                 // Checkout code from GitHub
                 git url: "${GIT_REPO}", credentialsId: "${GIT_CREDENTIALS_ID}"
+                // Capture the commit ID
+                script {
+                    COMMIT_ID = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
+                }
             }
         }
 
@@ -48,10 +53,10 @@ pipeline {
             steps {
                 // Trigger AWS CodeDeploy using GitHub repository
                 sh '''
-                    aws deploy create-deployment \
+                   aws deploy create-deployment \
                         --application-name ${CODEDEPLOY_APP} \
                         --deployment-group-name ${DEPLOYMENT_GROUP} \
-                        --github-location repository=${GIT_REPO},commitId=${GIT_COMMIT} \
+                        --github-location commit=${COMMIT_ID},repository=${GIT_REPO} \
                         --region ${AWS_REGION}
                 '''
             }
