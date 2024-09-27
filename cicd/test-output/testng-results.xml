@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-25T08:59:31 EDT" name="Default suite" finished-at="2024-09-25T08:59:42 EDT" duration-ms="10654">
+  <suite started-at="2024-09-27T16:01:54 EDT" name="Suite" finished-at="2024-09-27T16:02:03 EDT" duration-ms="9178">
     <groups>
     </groups>
-    <test started-at="2024-09-25T08:59:31 EDT" name="Default test" finished-at="2024-09-25T08:59:42 EDT" duration-ms="10654">
+    <test started-at="2024-09-27T16:01:54 EDT" name="Test" finished-at="2024-09-27T16:02:03 EDT" duration-ms="9178">
       <class name="vaibhav.tests.StandaloneTest">
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-25T08:59:31 EDT" name="landingPage" finished-at="2024-09-25T08:59:37 EDT" duration-ms="5607" status="PASS">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-27T16:01:54 EDT" name="landingPage" finished-at="2024-09-27T16:01:58 EDT" duration-ms="4226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->
-        <test-method signature="standaloneTest(java.util.HashMap)[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-25T08:59:37 EDT" name="standaloneTest" data-provider="getData" finished-at="2024-09-25T08:59:37 EDT" duration-ms="324" status="PASS">
+        <test-method signature="standaloneTest(java.util.HashMap)[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-27T16:01:58 EDT" name="standaloneTest" data-provider="getData" finished-at="2024-09-27T16:01:59 EDT" duration-ms="338" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- standaloneTest -->
-        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-25T08:59:37 EDT" name="afterExecution" finished-at="2024-09-25T08:59:37 EDT" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-27T16:01:59 EDT" name="afterExecution" finished-at="2024-09-27T16:01:59 EDT" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterExecution -->
-        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-25T08:59:37 EDT" name="landingPage" finished-at="2024-09-25T08:59:41 EDT" duration-ms="4059" status="PASS">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-27T16:01:59 EDT" name="landingPage" finished-at="2024-09-27T16:02:03 EDT" duration-ms="3917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPage -->
-        <test-method signature="standaloneTest(java.util.HashMap)[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-25T08:59:41 EDT" name="standaloneTest" data-provider="getData" finished-at="2024-09-25T08:59:42 EDT" duration-ms="272" status="PASS">
+        <test-method signature="standaloneTest(java.util.HashMap)[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-27T16:02:03 EDT" name="standaloneTest" data-provider="getData" finished-at="2024-09-27T16:02:03 EDT" duration-ms="281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- standaloneTest -->
-        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-25T08:59:42 EDT" name="afterExecution" finished-at="2024-09-25T08:59:42 EDT" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.StandaloneTest@28701274]" started-at="2024-09-27T16:02:03 EDT" name="afterExecution" finished-at="2024-09-27T16:02:03 EDT" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterExecution -->
       </class> <!-- vaibhav.tests.StandaloneTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
