@@ -9,7 +9,7 @@ const registerContainer = document.getElementById("register-container");
 const loginContainer = document.getElementById("login-container");
 
 let user = {};
-//test comment
+
 // test comment
 // Handle user registration
 registerForm.addEventListener("submit", function (event) {
