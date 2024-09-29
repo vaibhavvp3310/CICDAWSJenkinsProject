@@ -10,7 +10,6 @@ const loginContainer = document.getElementById("login-container");
 
 let user = {};
 
-// test comment
 // Handle user registration
 registerForm.addEventListener("submit", function (event) {
   event.preventDefault();
