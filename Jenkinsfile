@@ -7,7 +7,7 @@ pipeline {
         CODEDEPLOY_APP = 'MyWebApp'
         DEPLOYMENT_GROUP = 'WebAppDeploymentGroup'
         GIT_REPO = 'https://github.com/vaibhavvp3310/CICDAWSJenkinsProject.git'
-        GIT_CREDENTIALS_ID = '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'
+        // GIT_CREDENTIALS_ID = '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'
         COMMIT_ID = '' // Variable to hold commit ID
      
     }
@@ -16,7 +16,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from GitHub
-                git url: "${GIT_REPO}", credentialsId: "${GIT_CREDENTIALS_ID}"
+                git url: "${GIT_REPO}"
                 // Capture the commit ID
                 script {
                     COMMIT_ID = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
