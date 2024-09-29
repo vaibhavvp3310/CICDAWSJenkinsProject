@@ -7,7 +7,7 @@ pipeline {
         CODEDEPLOY_APP = 'MyWebApp'
         DEPLOYMENT_GROUP = 'WebAppDeploymentGroup'
         GIT_REPO = 'https://github.com/vaibhavvp3310/CICDAWSJenkinsProject.git'
-        GIT_CREDENTIALS_ID = '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'
+        GIT_CREDENTIALS_ID = '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'
         COMMIT_ID = '' // Variable to hold commit ID
      
     }
