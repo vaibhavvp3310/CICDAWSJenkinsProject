@@ -15,9 +15,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout code from GitHub
-                git url: "${GIT_REPO}"
-                // Capture the commit ID
                 script {
                     COMMIT_ID = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
                 }
