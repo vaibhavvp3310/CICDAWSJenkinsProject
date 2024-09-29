@@ -24,7 +24,7 @@ pipeline {
         stage('Build') {
             steps {
                 // If you're using Maven or Gradle for build, include this
-                sh 'mvn clean package'
+                sh 'mvn clean package -f cicd/pom.xml'
             }
         }
 
