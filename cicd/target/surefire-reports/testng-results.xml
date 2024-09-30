@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-30T14:03:41 EDT" name="Suite" finished-at="2024-09-30T14:03:52 EDT" duration-ms="10801">
+    <groups>
+    </groups>
+    <test started-at="2024-09-30T14:03:41 EDT" name="Test" finished-at="2024-09-30T14:03:52 EDT" duration-ms="10801">
+      <class name="vaibhav.tests.StandaloneTest">
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.StandaloneTest@8dbdac1]" started-at="2024-09-30T14:03:41 EDT" name="landingPage" finished-at="2024-09-30T14:03:46 EDT" duration-ms="4880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="standaloneTest(java.util.HashMap)[pri:0, instance:vaibhav.tests.StandaloneTest@8dbdac1]" started-at="2024-09-30T14:03:46 EDT" name="standaloneTest" data-provider="getData" finished-at="2024-09-30T14:03:47 EDT" duration-ms="564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{user=Vaibhav, password=abc123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- standaloneTest -->
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.StandaloneTest@8dbdac1]" started-at="2024-09-30T14:03:47 EDT" name="afterExecution" finished-at="2024-09-30T14:03:47 EDT" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterExecution -->
+        <test-method is-config="true" signature="landingPage()[pri:0, instance:vaibhav.tests.StandaloneTest@8dbdac1]" started-at="2024-09-30T14:03:47 EDT" name="landingPage" finished-at="2024-09-30T14:03:51 EDT" duration-ms="4356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="standaloneTest(java.util.HashMap)[pri:0, instance:vaibhav.tests.StandaloneTest@8dbdac1]" started-at="2024-09-30T14:03:51 EDT" name="standaloneTest" data-provider="getData" finished-at="2024-09-30T14:03:52 EDT" duration-ms="491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{user=Vaibh, password=xyz123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- standaloneTest -->
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:vaibhav.tests.StandaloneTest@8dbdac1]" started-at="2024-09-30T14:03:52 EDT" name="afterExecution" finished-at="2024-09-30T14:03:52 EDT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterExecution -->
+      </class> <!-- vaibhav.tests.StandaloneTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
