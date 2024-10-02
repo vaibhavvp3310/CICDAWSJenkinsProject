@@ -29,7 +29,7 @@ public class BaseTest {
 	
 	public void initializeDriver() throws IOException {
 	Properties properties = new Properties();
-	FileInputStream fis = FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + "vaibhav" + File.separator + "resources" + File.separator + "globalData.properties");
+	FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + "vaibhav" + File.separator + "resources" + File.separator + "globalData.properties");
     properties.load(fis);
     String browser = System.getProperty("browser")!= null? System.getProperty("browser"): properties.getProperty("browser");
     if(browser.contains("headless")) {
