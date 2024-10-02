@@ -3,6 +3,7 @@ package vaibhav.tests;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.io.File;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -28,7 +29,7 @@ public class StandaloneTest extends BaseTest {
 	
 	@DataProvider
 	public Object[][] getData() throws IOException {
-		String filepath = System.getProperty("user.dir")+("\\src\\test\\java\\vaibhav\\data\\login.json");
+		String filepath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "java" + File.separator + "vaibhav" + File.separator + "data" + File.separator + "login.json";
 		List<HashMap<Object, Object>> data = getJsonData(filepath);
 		return new Object[][] { {data.get(0)}, {data.get(1)}};
 	}

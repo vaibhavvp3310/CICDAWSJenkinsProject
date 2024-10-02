@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="vaibhav.tests.ErrorValidation">
+      <class name="vaibhav.tests.StandaloneTest">
         <methods>
-          <include name="errorCheck"/>
           <include name="afterExecution"/>
           <include name="landingPage"/>
+          <include name="standaloneTest"/>
         </methods>
-      </class> <!-- vaibhav.tests.ErrorValidation -->
+      </class> <!-- vaibhav.tests.StandaloneTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
