@@ -32,17 +32,16 @@ public class BaseTest {
 	FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + "vaibhav" + File.separator + "resources" + File.separator + "globalData.properties");
     properties.load(fis);
     String browser = System.getProperty("browser")!= null? System.getProperty("browser"): properties.getProperty("browser");
-    if(browser.contains("headless")) {
-    	ChromeOptions options = new ChromeOptions();
-    	options.addArguments("headless");
-    	driver = new ChromeDriver(options);
-    } else if(browser.contains("firefox")) {
+    if(browser.contains("chrome")) {
     	//firefox code
+    	
+    	driver = new ChromeDriver();
+    	
     }else if(browser.contains("edge")) {
     	System.setProperty("webdriver.edge.driver","C:\\Users\\vaibh\\Downloads\\msedgedriver.exe");
 		driver = new EdgeDriver();
-    }else if(browser.contains("chrome")) {
-    	driver = new ChromeDriver();
+    }else if(browser.contains("firefox")) {
+    	//firefox code
     }
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.manage().window().maximize();

@@ -7,7 +7,7 @@
         <methods>
           <include name="afterExecution"/>
           <include name="landingPage"/>
-          <include name="standaloneTest"/>
+          <include name="standaloneTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- vaibhav.tests.StandaloneTest -->
     </classes>
