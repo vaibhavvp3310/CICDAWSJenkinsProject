@@ -35,7 +35,13 @@ public class BaseTest {
     if(browser.contains("chrome")) {
     	//firefox code
     	System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-		driver = new ChromeDriver();
+		 ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless"); // Run in headless mode
+        options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
+        options.addArguments("--disable-gpu"); // Applicable to Windows
+        options.addArguments("--remote-debugging-port=9222");
+		driver = new ChromeDriver(options);
     	
     }else if(browser.contains("edge")) {
     	System.setProperty("webdriver.edge.driver","C:\\Users\\vaibh\\Downloads\\msedgedriver.exe");
