@@ -34,8 +34,8 @@ public class BaseTest {
     String browser = System.getProperty("browser")!= null? System.getProperty("browser"): properties.getProperty("browser");
     if(browser.contains("chrome")) {
     	//firefox code
-    	
-    	driver = new ChromeDriver();
+    	System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		driver = new ChromeDriver();
     	
     }else if(browser.contains("edge")) {
     	System.setProperty("webdriver.edge.driver","C:\\Users\\vaibh\\Downloads\\msedgedriver.exe");
