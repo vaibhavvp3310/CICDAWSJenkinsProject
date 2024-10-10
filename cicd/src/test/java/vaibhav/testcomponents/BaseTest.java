@@ -56,7 +56,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void landingPage() throws IOException {
 		initializeDriver();
-		driver.get("http://35.183.62.254/");
+		driver.get("http://35.183.81.76/");
 	}
 	
 	@AfterMethod
