@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define necessary environment variables
-        AWS_REGION = 'us-east-1' // Your AWS region
+        AWS_REGION = 'ca-central-1' // Your AWS region
         CODEDEPLOY_APP = 'MyWebApp'
         DEPLOYMENT_GROUP = 'WebAppDeploymentGroup'
         GIT_REPO = 'https://github.com/vaibhavvp3310/CICDAWSJenkinsProject.git'
