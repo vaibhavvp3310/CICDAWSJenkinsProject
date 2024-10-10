@@ -48,7 +48,13 @@ pipeline {
                 expression { currentBuild.result == null || currentBuild.result == 'SUCCESS' }
             }
             steps {
-                // Trigger AWS CodeDeploy using GitHub repository
+            
+                   echo "Deploying to AWS with the following details:"
+                echo "Application: ${CODEDEPLOY_APP}"
+                echo "Deployment Group: ${DEPLOYMENT_GROUP}"
+                echo "Commit ID: ${COMMIT_ID}"
+                echo "Repository: ${GIT_REPO}"
+                    // Trigger AWS CodeDeploy using GitHub repository
                 sh '''
                    aws deploy create-deployment \
                         --application-name ${CODEDEPLOY_APP} \
