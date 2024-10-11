@@ -59,7 +59,7 @@ pipeline {
                    aws deploy create-deployment \
                         --application-name ${CODEDEPLOY_APP} \
                         --deployment-group-name ${DEPLOYMENT_GROUP} \
-                        --github-location commit=${COMMIT_ID},repository=${GIT_REPO} \
+                        --github-location repository=${GIT_REPO},commitId=${COMMIT_ID} \
                         --region ${AWS_REGION}
                 '''
             }
