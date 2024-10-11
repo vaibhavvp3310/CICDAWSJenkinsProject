@@ -31,7 +31,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run Selenium + Java tests using Maven
-                sh 'mvn test -PRegression'
+                sh 'mvn test -f cicd/pom.xml -PRegression'
             }
         }
 
